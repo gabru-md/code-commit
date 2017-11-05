@@ -1,6 +1,6 @@
 let paraPlaceHolder = "Just Copy and Paste your code here to Share with the Class!"
 
-let uniqueId = "fd1bf29d-c21d-4d4a-b1ed-e9a628c780cf"
+let uniqueId = "fd1bf29d-c21d-4d4a-b1ed-e9a628c780cf" // Change it to your uniqueID
 
 var User = prompt("Please Enter your Roll Number:") || "092792"
 var UserRollNo = parseInt(User.substr(User.length - 4,User.length));
@@ -11,6 +11,10 @@ while(!(UserRollNo > 2560 && UserRollNo < 2623) || UserRollNo in exceptions){
 	User = prompt("Please Enter a valid Roll Number:")
 	UserRollNo = parseInt(User.substr(User.length - 4,User.length));
 }
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
 
 $('#board').attr('placeholder',paraPlaceHolder);
 
