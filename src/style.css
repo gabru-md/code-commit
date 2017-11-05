@@ -1,10 +1,13 @@
 body{
 	background-color:#F8F8F0;
 }
+.head{
+	margin-top:2vh;
+}
 .app{
 	margin-top:2vh;
 	border-radius: 5px;
-	height:80vh;
+	height:75vh;
 	vertical-align: top;
 }
 textarea{
@@ -14,12 +17,12 @@ textarea{
 	width:100%;
 	background-color:#272822;
 	border:none;
-	height:80vh;
+	height:75vh;
 	padding-top:2vh;
 	padding-bottom:5vh;
 }
 .pane{
-	height:3vh;
+	height:2vh;
 	color:#272822;
 }
 .pane-right{
@@ -37,4 +40,11 @@ textarea{
 }
 .foot{
 	margin-top:2vh;
+}
+a{
+	color:blue;
+	text-decoration: none;
+}
+.footer{
+	height: 2vh;
 }
