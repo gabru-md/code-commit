@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Share Pad</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<span align="left" style="font-size: 20px;"><b>Code Commit</b> : Commit your code for the class!</span>
+			</div>
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<div class="app">
+					<textarea id="board"></textarea>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<div class="pane">
+					<div class="row">
+						<div class="col-sm-1 col-md-1 text-left">
+							<span id="send-icon" class="material-icons btn" onclick="sendBoardData()">send</span>
+						</div>
+						<div class="col-sm-1 col-md-1 text-left">
+							<span id="refresh-icon" class="material-icons btn" onclick="getBoardData()">refresh</span>
+						</div>
+						<div class="col-sm-2 col-md-2 col-lg-2 text-right foot">
+							<span id="sending" style="display:none">sending data...</span>
+							<span id="fetching" style="display:none">fetching data...</span>
+						</div>
+						<div class="col-sm-8 col-md-8 col-lg-8 text-right foot">
+							<span id="user"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</html>

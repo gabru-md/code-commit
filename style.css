@@ -1,0 +1,40 @@
+body{
+	background-color:#F8F8F0;
+}
+.app{
+	margin-top:2vh;
+	border-radius: 5px;
+	height:80vh;
+	vertical-align: top;
+}
+textarea{
+	border-radius: 5px;
+	resize:none;
+	color:white;
+	width:100%;
+	background-color:#272822;
+	border:none;
+	height:80vh;
+	padding-top:2vh;
+	padding-bottom:5vh;
+}
+.pane{
+	height:3vh;
+	color:#272822;
+}
+.pane-right{
+	text-align: right;
+}
+#refresh-icon{
+	font-weight: lighter;
+	font-size:25px;
+	cursor:pointer;
+}
+#send-icon{
+	font-weight: lighter;
+	font-size:25px;
+	cursor:pointer;
+}
+.foot{
+	margin-top:2vh;
+}
