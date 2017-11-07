@@ -10,7 +10,7 @@ body{
 	height:75vh;
 	vertical-align: top;
 }
-textarea{
+#board{
 	border-radius: 5px;
 	resize:none;
 	color:white;
@@ -20,6 +20,7 @@ textarea{
 	height:75vh;
 	padding-top:2vh;
 	padding-bottom:5vh;
+	white-space: pre;
 }
 .pane{
 	height:2vh;

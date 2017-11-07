@@ -18,17 +18,24 @@ $(document).ready(function(){
 
 $('#board').attr('placeholder',paraPlaceHolder);
 
+$(document).on('keypress', '#board', function(e){
+  if(e.keyCode == 9){
+    document.execCommand('insertHTML', false, '&#009');
+    e.preventDefault()   
+  }
+});
+
 function getBoardData(){
 	$('#fetching').css('display','inline-block');
 	$.get("https://jsonstorage.net/api/items/" + uniqueId, function(data, textStatus, jqXHR) {
-		$('#board').val(data.message);
+		$('#board').html(data.message);
 		$('#fetching').css('display','none');
 		$('#user').text('Last Changes by : ' + data.user);
 	});
 }
 
 function sendBoardData(){
-	var boardValue = $('#board').val();
+	var boardValue = $('#board').html();
 	$('#sending').css('display','inline-block');
 	$.ajax({
 	    url:"https://jsonstorage.net/api/items/" + uniqueId,
