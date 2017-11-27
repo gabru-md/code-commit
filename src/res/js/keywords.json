@@ -1,0 +1,12 @@
+{
+    "#include": "hotpink",
+    "using" : "hotpink",
+    "namespace" : "hotpink",
+    "main" : "green",
+    "return" : "yellow",
+    "int" : "cyan",
+    "float" : "cyan",
+    "string" : "cyan",
+    "double" : "cyan",
+    "this"  : "orange"
+}
